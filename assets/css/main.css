@@ -2273,12 +2273,18 @@ input, select, textarea {
 		.wrapper.style5 {
 			background: #242728b5;
 			color: inherit;
+			background-image: url("../../images/kbh.jpg");
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-attachment: local;
+			background-position-x: right;
 		}
 		
 		.wrapper.style5 h2 {
 			font-size: 2.5em;
 			margin-bottom: .1em;
 			line-height: 50px;
+			margin-top: .5em;
 		}
 		
 		.wrapper.style5 h3 {
@@ -2770,6 +2776,10 @@ input, select, textarea {
 				.wrapper.style4 {
 					padding: 3em;
 				}
+				
+				.wrapper.style5 {
+					
+				}
 
 		/* Header */
 
@@ -2970,6 +2980,10 @@ input, select, textarea {
 
 			.wrapper.style4 {
 				padding-bottom: 3em;
+			}
+			
+			.wrapper.style5 {
+				background-image: none;
 			}
 
 		/* Main */
