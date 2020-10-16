@@ -17,7 +17,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -1161,10 +1161,17 @@ input, select, textarea {
 					margin-top: -15px;
 					margin-left: -15px;
 				}
+				
+				.row.gtr-50 img {
+					max-width:100%;
+					max-height:100%;
+				}
 
 					.row.gtr-50 > * {
 						padding: 15px 0 0 15px;
+						overflow: hidden;
 					}
+					
 
 					.row.gtr-50.gtr-uniform {
 						margin-top: -15px;
@@ -2206,8 +2213,8 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		margin-bottom: 5em;
-		padding: 5em;
+		margin-bottom: 2em;
+		padding: 4em;
 	}
 
 		.wrapper.style1 {
@@ -2215,12 +2222,14 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #e14122;
-			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
-			background-position: bottom left, bottom right;
+			background-color: #fc3702;
 			background-repeat: no-repeat, no-repeat;
 			background-size: 25em, 25em;
 			color: #fff;
+		}
+		
+		.wrapper.style2 a {
+			color:#fff;
 		}
 
 			.wrapper.style2 input[type="button"]:hover,
@@ -2259,6 +2268,22 @@ input, select, textarea {
 			background: #fff;
 			color: inherit;
 			padding: 4em;
+		}
+		
+		.wrapper.style5 {
+			background: #242728b5;
+			color: inherit;
+		}
+		
+		.wrapper.style5 h2 {
+			font-size: 2.5em;
+			margin-bottom: .1em;
+			line-height: 50px;
+		}
+		
+		.wrapper.style5 h3 {
+			font-size: 1.5em;
+			text-transform: none;
 		}
 
 /* Header */
@@ -2304,7 +2329,7 @@ input, select, textarea {
 	}
 
 	#header {
-		background: #fff;
+		background: #24272830;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 		color: inherit;
 		cursor: default;
@@ -2435,7 +2460,7 @@ input, select, textarea {
 	.dropotron {
 		list-style: none;
 		padding-left: 0;
-		background: #fff;
+		background: #e83d29;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 		line-height: 2.25em;
 		min-width: 13em;
@@ -2492,7 +2517,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		100% {
+		100% {@
 			opacity: 1;
 		}
 	}
@@ -2529,15 +2554,16 @@ input, select, textarea {
 
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-color: #64586280;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner2.png");
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
 		color: #fff;
 		cursor: default;
-		padding: 6em 0;
+		padding: 2em 0;
 		text-align: center;
+		overflow:hidden;
 	}
 
 		#banner .inner {
@@ -2549,15 +2575,15 @@ input, select, textarea {
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			/* background: rgba(52, 27, 43, 0.5); */
 			color: #fff;
-			display: inline-block;
+			display: flex;
 			opacity: 0;
 			padding: 15em;
 			text-align: center;
 			background-image: url(../../images/FrameLogo.png);
 			background-repeat: no-repeat;
 			background-position: center;
+			overflow:hidden;
 		}
 
 			#banner .inner header {
@@ -2595,6 +2621,20 @@ input, select, textarea {
 			#banner .inner footer {
 				margin: 2em 0 0 0;
 			}
+			
+			#banner video {
+				min-width: 100%;
+				min-height: 100%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				z-index:-1;
+			}
+	
+}
+
+}
 
 /* Main */
 
@@ -2630,7 +2670,7 @@ input, select, textarea {
 
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #e14122;
+		background-color: #fc3702;
 		/* background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg"); */
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
@@ -2723,7 +2763,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			.wrapper {
-				margin-bottom: 4em;
+				margin-bottom: 1em;
 				padding: 4em 3em;
 			}
 
