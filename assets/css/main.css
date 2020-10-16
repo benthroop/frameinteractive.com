@@ -2275,7 +2275,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style4 {
-			background: #c4b0b0;
+			background: #3b3d3c;
 			color: inherit;
 			padding: 4em;
 		}
@@ -2698,7 +2698,13 @@ input, select, textarea {
 
 		#cta header {
 			margin-bottom: 2em;
+        
 		}
+
+        #cta h2{
+            font-size: 40px;
+            line-height: 10px
+        }
 
 /* Footer */
 
@@ -2944,6 +2950,7 @@ input, select, textarea {
 				font-size: 0.8em;
 				min-width: 18em;
 				padding: 0.75em 0;
+                margin-top:2em;
 			}
 
 		/* Featured Icons */

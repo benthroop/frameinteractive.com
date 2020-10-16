@@ -11,15 +11,15 @@
 			<!-- Header -->
 				<header id="header" class="reveal">
 					<h1 id="logo"><a href="index.html">Frame Interactive<span></span></a></h1>
-                    <!--
+                    
                     <nav id="nav">
 						<ul>
-							<li class="current" style="white-space: nowrap;"><a href="index.html">Jobs</a></li>
-							<li class="current" style="white-space: nowrap;"><a href="index.html">Services</a></li>
-							<li class="current" style="white-space: nowrap;"><a href="index.html">Contact</a></li>
+					<!--		<li class="current" style="white-space: nowrap;"><a href="index.html">Jobs</a></li>
+							<li class="current" style="white-space: nowrap;"><a href="index.html">Services</a></li> -->
+							<li class="current" style="white-space: nowrap;"><a href="#cta">Contact</a></li>
 						</ul>
 					</nav>
-                    -->
+                    
 				</header>
 
 			<!-- Banner -->
@@ -114,33 +114,28 @@
 
 					<header>
 						<h2>Get in touch</h2>
+                        <h3>These go straight to Ben!</h3>
 					</header>
 
                     <section class="wrapper style4 special container medium">
 							<!-- Content -->
-								<div class="content">
-									<form>
-										<div class="row gtr-50">
-											<div class="col-6 col-12-mobile">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-mobile">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="7"></textarea>
-											</div>
-											<div class="col-12">
-												<ul class="buttons">
-													<li><input type="submit" class="special" value="Send Message" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</div>
+							<form
+                              action="https://formspree.io/f/xdopejkj"
+                              method="POST">
+                              <label>
+                                Your email:
+                                <input type="text" name="_replyto">
+                              </label>
+                                    <p></p>
+                              <label>
+                                Your message:
+                                <textarea name="message"></textarea>
+                              </label>
+                                </a>
+                              <!-- your other form fields go here -->
+<br>
+                              <button type="submit">Send</button>
+                            </form>
 						</section>
 				</section>
 
