@@ -1774,8 +1774,9 @@ input, select, textarea {
 
 		header h3 {
 			text-align: center;
-            line-height: .2;
-            letter-spacing: .09em
+            letter-spacing: .09em;
+            font-weight: bold;
+            color: #fff;
 		}
 
 		header.special h2 + p {
@@ -1892,7 +1893,7 @@ input, select, textarea {
 
 		.image.featured {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 1em 0;
 		}
 
 			.image.featured img {
@@ -2703,7 +2704,7 @@ input, select, textarea {
 
         #cta h2{
             font-size: 40px;
-            line-height: 10px
+            margin-bottom: 0;
         }
 
 /* Footer */
@@ -2792,6 +2793,10 @@ input, select, textarea {
 				.wrapper.style4 {
 					padding: 3em;
 				}
+        
+               .wrapper.style4 button {
+                    margin-top: 2em;
+                }
 				
 				.wrapper.style5 {
 					
@@ -3337,6 +3342,10 @@ input, select, textarea {
 					background-size: 10em;
 					padding: 1.5em 1.5em 3em 1.5em;
 				}
+        
+                .wrapper.style4 button {
+                    margin-top: 2em;
+                }
 
 		/* Banner */
 
