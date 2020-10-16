@@ -1733,6 +1733,11 @@ input, select, textarea {
 	header.major {
 		padding-bottom: 2em;
 	}
+	
+	header.major h1 {
+		font-size: 50px;
+		margin-bottom: 0;
+	}
 
 	header.special {
 		margin-bottom: 5em;
@@ -2669,7 +2674,7 @@ input, select, textarea {
 			}
 
 	body.index #main {
-		padding-top: 1em;
+		padding-top: 2em;
 	}
 
 /* CTA */
@@ -2790,7 +2795,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				background-attachment: scroll;
+				background-attachment: fixed;
 			}
 
 		/* CTA */
