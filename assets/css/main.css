@@ -1,4 +1,4 @@
-@import url("fontawesome-all.min.css");
+@import url("../fontawesome-free-7.1.0-web/css/all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 
 /*
@@ -1910,6 +1910,11 @@ input, select, textarea {
 		position: relative;
 	}
 
+		/* Make icon glyphs match the site's dark gray tone for better contrast */
+		.icon {
+			color: #3b3d3c;
+		}
+
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
@@ -1919,7 +1924,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: var(--fa-family, 'Font Awesome 7 Free');
 			font-weight: 400;
 		}
 
@@ -1932,7 +1937,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: var(--fa-family, 'Font Awesome 7 Brands');
 		}
 
 		.icon.circle {
