@@ -427,12 +427,12 @@ input, select, textarea {
 				}
 
 		.row.gtr-50 {
-			margin-top: -25px;
-			margin-left: -25px;
+			margin-top: 0px;
+			margin-left: 0px;
 		}
 
 			.row.gtr-50 > * {
-				padding: 25px 0 0 25px;
+				padding: 15px;
 			}
 
 			.row.gtr-50.gtr-uniform {
@@ -1915,6 +1915,14 @@ input, select, textarea {
 			color: #3b3d3c;
 		}
 
+	/* Project hero background (Dog_Blue) */
+	.project-hero {
+		background-image: url('../../images/Dog_Blue.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
@@ -2232,7 +2240,7 @@ input, select, textarea {
 
 	.wrapper {
 		margin-bottom: 2em;
-		padding: 4em;
+		padding: 2em;
 	}
 
 		.wrapper.style1 {
@@ -2286,7 +2294,7 @@ input, select, textarea {
 		.wrapper.style4 {
 			background: #3b3d3c;
 			color: inherit;
-			padding: 4em;
+			padding: 2em;
 		}
 		
 		.wrapper.style5 {
@@ -2296,6 +2304,10 @@ input, select, textarea {
 			background-repeat: no-repeat;
 			background-attachment: local;
 			background-position-x: right;
+		}
+		
+		.wrapper.style5 a {
+			text-decoration: underline
 		}
 		
 		.wrapper.style5 h2 {
@@ -2670,6 +2682,10 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-size: 25em;
 		padding: 7em 0;
+	}
+
+	#main a{
+		text-decoration: underline;
 	}
 
 		#main > :last-child {
