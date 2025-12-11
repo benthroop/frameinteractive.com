@@ -2235,7 +2235,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #fc3702;
+			background-color: #a2ada0;
 			background-repeat: no-repeat, no-repeat;
 			background-size: 25em, 25em;
 			color: #fff;
@@ -2287,7 +2287,6 @@ input, select, textarea {
 		.wrapper.style5 {
 			background: #242728b5;
 			color: inherit;
-			background-image: url("../../images/kbh.jpg");
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-attachment: local;
