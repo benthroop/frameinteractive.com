@@ -1,4 +1,4 @@
-@import url("fontawesome-all.min.css");
+@import url("../fontawesome-free-7.1.0-web/css/all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 
 /*
@@ -116,7 +116,7 @@ input, select, textarea {
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		color: #ffffff;
 		text-decoration: none;
-		border-bottom: dotted 1px;
+		
 	}
 
 		a:hover {
@@ -427,12 +427,12 @@ input, select, textarea {
 				}
 
 		.row.gtr-50 {
-			margin-top: -25px;
-			margin-left: -25px;
+			margin-top: 0px;
+			margin-left: 0px;
 		}
 
 			.row.gtr-50 > * {
-				padding: 25px 0 0 25px;
+				padding: 15px;
 			}
 
 			.row.gtr-50.gtr-uniform {
@@ -1910,6 +1910,19 @@ input, select, textarea {
 		position: relative;
 	}
 
+		/* Make icon glyphs match the site's dark gray tone for better contrast */
+		.icon {
+			color: #3b3d3c;
+		}
+
+	/* Project hero background (Dog_Blue) */
+	.project-hero {
+		background-image: url('../../images/Dog_Blue.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
@@ -1919,7 +1932,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: var(--fa-family, 'Font Awesome 7 Free');
 			font-weight: 400;
 		}
 
@@ -1932,7 +1945,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: var(--fa-family, 'Font Awesome 7 Brands');
 		}
 
 		.icon.circle {
@@ -2227,7 +2240,7 @@ input, select, textarea {
 
 	.wrapper {
 		margin-bottom: 2em;
-		padding: 4em;
+		padding: 2em;
 	}
 
 		.wrapper.style1 {
@@ -2235,7 +2248,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #fc3702;
+			background-color: #a2ada0;
 			background-repeat: no-repeat, no-repeat;
 			background-size: 25em, 25em;
 			color: #fff;
@@ -2281,17 +2294,20 @@ input, select, textarea {
 		.wrapper.style4 {
 			background: #3b3d3c;
 			color: inherit;
-			padding: 4em;
+			padding: 2em;
 		}
 		
 		.wrapper.style5 {
 			background: #242728b5;
 			color: inherit;
-			background-image: url("../../images/kbh.jpg");
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-attachment: local;
 			background-position-x: right;
+		}
+		
+		.wrapper.style5 a {
+			text-decoration: underline
 		}
 		
 		.wrapper.style5 h2 {
@@ -2666,6 +2682,10 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-size: 25em;
 		padding: 7em 0;
+	}
+
+	#main a{
+		text-decoration: underline;
 	}
 
 		#main > :last-child {
